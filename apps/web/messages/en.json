@@ -1,20 +1,20 @@
 {
   "email": {
-    "otpSubject": "Your Keydrop verification code",
+    "otpSubject": "Your BRIXTA Keydrop verification code",
     "otpBody": "Your verification code is {otp}. If you did not request it, ignore this email.",
-    "codeSubject": "Your code from Keydrop",
+    "codeSubject": "Your code from BRIXTA Keydrop",
     "codeBody": "Your code for {product}:\n\n{code}\n\nKeep this code private. This email does not confirm redemption on an external platform.",
     "viewCodes": "View your codes and available actions:\n{url}",
     "linkRecipient": "To save this code to your account, sign in or create an account with the email address that received this message, verify it, then choose \"Find my emailed codes\":\n{url}\n\nShared software activation codes require this step before activating a device.",
     "visitWebsite": "Visit the product website:\n{url}",
-    "adminNotificationSubject": "Keydrop needs your attention",
+    "adminNotificationSubject": "BRIXTA Keydrop needs your attention",
     "adminNotificationBody": "{summary}\n\nOperation: {operation}\n\nSign in as the administrator to review this notification:\n{url}\n\nCheck the current status before taking action; it may have changed since this alert was sent.",
-    "passwordResetSubject": "Reset your Keydrop password",
+    "passwordResetSubject": "Reset your BRIXTA Keydrop password",
     "passwordResetBody": "Your password reset code is {otp}. This code is only for resetting your password. If you did not request it, ignore this email."
   },
   "common": {
     "poweredBy": "Powered by <link>Keydrop</link>",
-    "brand": "Keydrop",
+    "brand": "BRIXTA BRIXTA Keydrop",
     "dashboard": "Dashboard",
     "signIn": "Sign in",
     "email": "Email",
@@ -27,7 +27,7 @@
   },
   "setup": {
     "title": "Make it yours.",
-    "description": "Create the administrator account for your Keydrop instance.",
+    "description": "Create the administrator account for your BRIXTA Keydrop instance.",
     "secret": "Setup key",
     "passwordHint": "Use at least 12 characters.",
     "success": "Your account is ready. Sign in to continue.",
@@ -52,7 +52,7 @@
   },
   "deploymentCheck": {
     "title": "Finish the deployment settings.",
-    "description": "Keydrop can't start yet because some required settings are missing or invalid. Secret values are never shown here.",
+    "description": "BRIXTA Keydrop can't start yet because some required settings are missing or invalid. Secret values are never shown here.",
     "missing": "Not set.",
     "invalid": "Invalid format.",
     "database": "The D1 binding named DB is missing.",
@@ -614,7 +614,7 @@
     "promotions": "Allow Stripe promotion codes at checkout",
     "promotionsHint": "Customers can enter eligible Stripe promotion codes, including 100% discounts. Changes apply to new checkout sessions. Zero-cost orders with no stock require manual fulfillment when the fallback is refund.",
     "stripeProduct": "Stripe Product ID (optional)",
-    "stripeProductHint": "Link an active product from the same Stripe account and mode to support product-specific coupons. Leave blank to create inline product data. Keydrop still sets the price. Changes apply to new checkout sessions."
+    "stripeProductHint": "Link an active product from the same Stripe account and mode to support product-specific coupons. Leave blank to create inline product data. BRIXTA Keydrop still sets the price. Changes apply to new checkout sessions."
   },
   "purchase": {
     "eyebrow": "GET YOUR CODE",
@@ -887,7 +887,7 @@
     "shared": "Shared code — multiple recipients",
     "unique": "Unique code — one recipient",
     "limit": "Total claim limit (optional)",
-    "restrictions": "The claim limit controls distribution in Keydrop, not redemptions in Stripe. Check customer, product and minimum-purchase restrictions before sharing. Each source creates one code in its own batch.",
+    "restrictions": "The claim limit controls distribution in BRIXTA Keydrop, not redemptions in Stripe. Check customer, product and minimum-purchase restrictions before sharing. Each source creates one code in its own batch.",
     "submit": "Import sources",
     "working": "Importing…",
     "success": "Imported batch: {id}.",
@@ -904,7 +904,7 @@
     "title": "Push a code to Stripe",
     "close": "Close",
     "code": "Code {id} · {batch}",
-    "description": "The original code and batch stay in Keydrop. New distribution pauses while the push is unresolved. Retry the original request; do not create a different operation after an unknown result.",
+    "description": "The original code and batch stay in BRIXTA Keydrop. New distribution pauses while the push is unresolved. Retry the original request; do not create a different operation after an unknown result.",
     "connect": "Check Stripe connection",
     "reconnect": "Check connection again",
     "live": "Live mode · {account}. This creates a real Stripe promotion code.",
@@ -1078,7 +1078,7 @@
     "credits": "Credits",
     "memberships": "Memberships & licenses",
     "filter": "Account ID or email",
-    "filterHint": "Enter an exact account ID or email address. API identities without a Keydrop account can be found by ID.",
+    "filterHint": "Enter an exact account ID or email address. API identities without a BRIXTA Keydrop account can be found by ID.",
     "search": "Search",
     "clear": "Clear",
     "empty": "No matching rewards.",
@@ -1139,7 +1139,7 @@
   "refundReview": {
     "title": "Review refund access",
     "hint": "Choose how this confirmed refund affects access. This records a local access decision; it does not issue or change a Stripe refund.",
-    "externalHint": "Keydrop cannot revoke a code on an external platform. Check that platform and record how you handled this refund. Acknowledging it does not invalidate the external code.",
+    "externalHint": "BRIXTA Keydrop cannot revoke a code on an external platform. Check that platform and record how you handled this refund. Acknowledging it does not invalidate the external code.",
     "revokedHint": "Access or the code has already been revoked. Review the result and acknowledge it; this action cannot restore access.",
     "note": "Review note (at least 10 characters)",
     "retain": "Keep access",
@@ -1229,7 +1229,7 @@
       "title": "A price for each product",
       "description": "Review the price and currency shown on the product’s purchase page before you pay.",
       "body": "Some campaigns distribute codes for free. Paid products use a one-time checkout for one code. The price and any available discount are shown before payment.",
-      "note": "Keydrop itself is an MIT-licensed template. This page describes products sold by this deployment, not a subscription to Keydrop."
+      "note": "BRIXTA Keydrop itself is an MIT-licensed template. This page describes products sold by this deployment, not a subscription to BRIXTA Keydrop."
     },
     "demo": {
       "label": "Demo",

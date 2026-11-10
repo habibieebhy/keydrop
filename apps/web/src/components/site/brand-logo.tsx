@@ -1,32 +1,23 @@
 import { cn } from "@/lib/utils";
-import { mark, wordmark } from "./brand-paths";
 
-// 品牌字標與圖示。字母跟著文字色（currentColor），句點用 --brand-accent，深淺色自動切換。
-// 部署者換品牌時只要改這個檔案；label 傳入 messages 的 common.brand，給螢幕閱讀器讀。
-
+// BRIXTA Keydrop text-based brand, replacing the upstream Keydrop SVG.
+// No data, authentication, or campaign behaviour is changed here.
 export function BrandWordmark({ label, className }: { label: string; className?: string }) {
   return (
-    <svg viewBox={wordmark.viewBox} role="img" aria-label={label} className={cn("h-7 w-auto", className)}>
-      <path fill="currentColor" d={wordmark.letters} />
-      <path fill="currentColor" fillRule="evenodd" d={wordmark.keyhole} />
-      <circle {...wordmark.dot} fill="var(--brand-accent)" />
-    </svg>
+    <span aria-label={label} className={cn("inline-flex items-baseline gap-1.5 whitespace-nowrap font-bold tracking-tight text-current", className)}>
+      <span className="text-[1.15rem]">BRIXTA</span>
+      <span className="text-[0.95rem] font-semibold text-muted-foreground">Keydrop</span>
+    </span>
   );
 }
 
-// 圓角方塊圖示：底色用 --primary，字母用 --primary-foreground，跟著主題反轉。
 export function BrandMark({ className, label }: { className?: string; label?: string }) {
   return (
-    <svg
-      viewBox={mark.viewBox}
-      className={cn("size-7 shrink-0", className)}
+    <span
       {...(label ? { role: "img", "aria-label": label } : { "aria-hidden": true })}
+      className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-black text-primary-foreground", className)}
     >
-      <rect width="512" height="512" rx="112" fill="var(--primary)" />
-      <g transform={mark.transform}>
-        <path fill="var(--primary-foreground)" d={mark.k} />
-        <circle {...mark.dot} fill="var(--brand-accent-on-primary)" />
-      </g>
-    </svg>
+      B
+    </span>
   );
 }

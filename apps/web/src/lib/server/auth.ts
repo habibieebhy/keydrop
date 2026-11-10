@@ -11,7 +11,7 @@ import { normalizeUserName } from "@/lib/domain/user-name";
 export function createAuth(env: RuntimeEnv, settings: Settings) {
   const mailEnabled = Boolean(env.EMAIL && settings.EMAIL_FROM);
   return betterAuth({
-    appName: "Keydrop",
+    appName: "BRIXTA Keydrop",
     baseURL: settings.APP_URL,
     secret: settings.BETTER_AUTH_SECRET,
     // 正式入口是 Cloudflare Workers；只信任 Cloudflare 覆寫的來源 IP 標頭。
